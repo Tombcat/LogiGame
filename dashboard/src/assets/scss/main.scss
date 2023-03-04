@@ -1,0 +1,255 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../../../node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
+
+/*.button {
+
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    &.disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events:  none;
+    }
+}*/
+
+.production{
+    color: $production-color;
+    &-bg{
+        background-color: $production-color;
+    }
+}
+
+.distribution{
+    color: $distribution-color;
+    &-bg{
+        background-color: $distribution-color;
+    }
+}
+
+.sales{
+    color: $sales-color;
+    &-bg{
+        background-color: $sales-color;
+    }
+}
+
+.manager{
+    color: $manager-color;
+    &-bg{
+        background-color: $manager-color;;
+    }
+}
+
+.emission{
+    &-bg{
+        background-color: $color-emission !important;
+    }
+}
+
+.cost{
+    color: #FEF2CB;
+    &-bg{
+        background-color: #FEF2CB !important;
+    }
+}
+.profit{
+    color: #D0D9E9;
+    &-bg{
+        background-color: #D0D9E9 !important;
+    }
+}
+
+.svg-white{
+    filter: invert(100%) sepia(14%) saturate(0%) hue-rotate(93deg) brightness(115%) contrast(100%);
+}
+
+.overflowX{
+    overflow-x: auto;
+}
+
+.overflow-x-auto{
+    overflow-x: auto;
+}
+
+.chart{
+    min-width: 300px;
+}
+
+
+:root {
+    --color-light: white;
+    --color-dark: #212121;
+    --color-signal: #fab700;
+    
+    --color-background: var(--color-light);
+    --color-text: var(--color-dark);
+    --color-accent: var(--color-signal);
+    
+    --size-bezel: .5rem;
+    --size-radius: 4px;
+    
+    line-height: 1.4;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: calc(.6rem + .4vw);
+    color: var(--color-text);
+    background: var(--color-background);
+    font-weight: 300;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 900;
+  }
+  
+  mark {
+    background: var(--color-accent);
+    color: var(--color-text);
+    font-weight: bold;
+    padding: 0 0.2em;
+  }
+  
+  .card {
+    background: var(--color-background);
+    padding: calc(4 * var(--size-bezel));
+    //margin-top: calc(4 * var(--size-bezel));
+    border-radius: var(--size-radius);
+    border: 3px solid var(--color-shadow, currentColor);
+    box-shadow: .5rem .5rem 0 var(--color-shadow, currentColor);
+    
+    &--inverted {
+      --color-background: var(--color-dark);
+      color: var(--color-light);
+      --color-shadow: var(--color-accent);
+    }
+    
+    &--accent {
+      --color-background: var(--color-signal);
+      --color-accent: var(--color-light);
+      color: var(--color-dark);
+    }
+    
+    *:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  
+  .l-design-widht {
+    max-width: 40rem;
+    padding: 1rem;
+  }
+  
+  .input {
+    position: relative;
+
+    &.disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events:  none;
+    }
+
+    
+    &__label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+      margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+      background: pink;
+      white-space: nowrap;
+      transform: translate(0, 0);
+      transform-origin: 0 0;
+      background: var(--color-background);
+      transition: transform 120ms ease-in;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+    &__field {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border: 3px solid currentColor;
+      padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+      color: currentColor;
+      background: transparent;
+      border-radius: var(--size-radius);
+
+      &--textfield{
+            -moz-appearance: textfield;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+      
+      &:focus,
+      &:not(:placeholder-shown) {
+        & + .input__label {
+          transform: translate(.25rem, -65%) scale(.8);
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+  
+  
+  .button-group {
+    margin-top: calc(var(--size-bezel) * 2.5);
+  }
+  
+  button {
+    color: currentColor;
+    padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+    background: var(--color-accent);
+    border: none;
+    border-radius: var(--size-radius);
+    font-weight: 900;
+    
+    &[type=reset]{
+      background: var(--color-background);
+      font-weight: 200;
+    } 
+
+    &.disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events:  none;
+    }
+  }
+  
+  button + button {
+    margin-left: calc(var(--size-bezel) * 2);
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 1em; height: 1em;
+    margin-right: .5em;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }

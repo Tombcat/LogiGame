@@ -1,0 +1,43 @@
+{
+  "name": "edu-game-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l error app.js",
+    "dev": "fastify start -l info -P app.js",
+    "nodemonDev": "nodemon --exec npm run dev",
+    "nodemon": "nodemon --exec npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.1.0",
+    "@fastify/cors": "^8.0.0",
+    "@fastify/static": "^6.4.1",
+    "@fastify/swagger": "^7.4.1",
+    "@fastify/websocket": "^6.0.1",
+    "events": "^3.3.0",
+    "fastify": "^4.3.0",
+    "fastify-autoload": "^3.13.0",
+    "fastify-cli": "^4.4.0",
+    "fastify-plugin": "^4.0.0",
+    "fastify-socket.io": "^4.0.0",
+    "fastify-static": "^3.0.0",
+    "fastify-swagger": "^5.2.0",
+    "moment": "^2.29.4",
+    "mongoose": "^5.4.16",
+    "mqemitter": "^5.0.0",
+    "socket.io": "^4.6.1",
+    "ws": "^8.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "tap": "^16.3.0"
+  }
+}

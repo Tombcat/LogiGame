@@ -1,0 +1,116 @@
+:root {
+    --placeholder-color: #a3a3a3;
+    --header-bg: #4c4c4c;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+#app{
+    overflow: hidden;
+}
+
+.list-style-none {
+    list-style: none;
+}
+.btn-primary {
+    background: #39d084;
+    background: linear-gradient(to right, #39d084, #2c9f67);
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    font-weight: 800;
+}
+.btn-primary[class*="btn-blue"] {
+    background: #00a8ff;
+    background: linear-gradient(to right, #00a8ff, #0072ff);
+}
+.btn-primary[class*="btn-red"] {
+    background: #ff5252;
+    background: linear-gradient(to right, #ff5252, #ff2a2a);
+}
+
+.btn-big {
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+.btn-big[class*="btn-blue"] {
+    background-color: #268bd2;
+    color: white;
+}
+i[class*="fa-"] {
+    margin-right: 5px;
+}
+.link-primary {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.link-primary:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: 0;
+    transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+    background-color: rgba(71, 191, 201, 0.5);
+}
+.link-primary:hover:after {
+    top: 0%;
+}
+.link-primary[class*="link-yellow"]:after {
+    background-color: rgba(243, 233, 20, 0.5);
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+input {
+    font-weight: 800;
+}
+
+.alert {
+    padding: 7px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.alert-danger {
+    background-color: #ff5252;
+    border-left: 7px solid #cb3333;
+}
+
+header {
+    background: var(--header-bg);
+    background: linear-gradient(to right, var(--header-bg), #656565);
+    padding: 20px;
+    text-align: center;
+    height: 25px;
+  }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+  header ul li {
+    margin: 0 10px;
+  }
+  header ul li a {
+    color: #333;
+    text-decoration: none;
+  }

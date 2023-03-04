@@ -1,0 +1,58 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "apexcharts": "^3.36.3",
+    "bootstrap": "^5.2.0",
+    "bootstrap-vue": "^2.22.0",
+    "core-js": "^3.6.5",
+    "socket.io-client": "^4.6.1",
+    "vue": "^3.2.37",
+    "vue-cookies": "^1.8.2",
+    "vue-router": "^4.0.0-0",
+    "vue-sessionstorage": "^1.0.0",
+    "vue-toastification": "^2.0.0-rc.5",
+    "vue3-apexcharts": "^1.4.1",
+    "vuex": "^4.0.2",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^7.3.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

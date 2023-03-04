@@ -1,0 +1,186 @@
+/*:root {
+    --placeholder-color-edit: #535353;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: calc(100% - 65px);
+    width: 100%;
+}
+#board {
+    position: absolute;
+    left: 250px;
+    height: calc(100% - 65px);
+    width: calc(100% - 251px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 65px;
+
+    border-left: 1px solid #ccc;
+}
+
+#default {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.card {
+    padding: 15px;
+    margin: 20px 10px;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+a.card {
+    color: black;
+    text-decoration: none;
+}
+a.card:before {
+    font-family: FontAwesome, sans-serif;
+}
+a.card[class*="classic"]:before {
+    content: "\f0c1";
+}
+a.card[class*="external"]:before {
+    content: "\f35d";
+}
+a.card[class*="link-blue"] {
+    color: #0073b7;
+}
+a.card[class*="link-blue"] {
+    text-decoration: underline;
+}
+a.card[class*="txt-big"] {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.card:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.card[class*="orange"] {
+    background: #f9c851;
+    background: linear-gradient(to bottom, #f9c851 0%, #f2994a 100%);
+}
+.card[class*="blue"] {
+    background: #4a69bd;
+    background: linear-gradient(to bottom, #4a69bd 0%, #3b5998 100%);
+}
+.card[class*="green"] {
+    background: #9ccc65;
+    background: linear-gradient(to bottom, #9ccc65 0%, #a1d265 100%);
+}
+.card[class*="red"] {
+    background: #ff5b57;
+    background: linear-gradient(to bottom, #ff5b57 0%, #ff2b2b 100%);
+}
+.card[class*="purple"] {
+    background: #6f42c1;
+    background: linear-gradient(to bottom, #6f42c1 0%, #a55eea 100%);
+}
+.card[class*="fit-content"] {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+}
+.card[class*="card-small"] {
+    width: 200px
+}
+.card[class*="card-medium"] {
+    width: 300px
+}
+.card[class*="card-large"] {
+    width: 400px
+}
+.card[class*="card-big"] {
+    width: 500px
+}
+.card .title {
+    font-weight: 900;
+    font-size: 28px;
+    margin: 10px 0;
+}
+.card .txt-content {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.cardAlign {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input.editAccount {
+    border: 1px solid #ccc;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 3px;
+    width: calc(100% - 20px);
+    margin-top: 5px;
+}
+textarea.editAccount {
+    border: 1px solid #ccc;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 3px;
+    resize: vertical;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+select.editAccount {
+    border: 1px solid #ccc;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 5px;
+}
+.btn-save {
+    background: #0073b7;
+    background: linear-gradient(to bottom, #0073b7 0%, #0062a7 100%);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+input.editAccount::placeholder {
+    color: var(--placeholder-color-edit);
+}
+input.editAccount::-ms-input-placeholder {
+    color: var(--placeholder-color-edit);
+}
+input.editAccount::-webkit-input-placeholder {
+    color: var(--placeholder-color-edit);
+}
+textarea.editAccount::placeholder {
+    color: var(--placeholder-color-edit);
+}
+textarea.editAccount::-ms-input-placeholder {
+    color: var(--placeholder-color-edit);
+}
+textarea.editAccount::-webkit-input-placeholder {
+    color: var(--placeholder-color-edit);
+}*/

@@ -1,0 +1,47 @@
+
+
+/*#dashboard{
+  min-height: calc(100vh - 40px);
+  background-color: #e6eaea;
+  color: #002d2b;
+}
+
+#game{
+    width: 100%;
+    max-width: 1440px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  th {
+    color: #0070C0;
+    padding: 3px;
+    text-align: center;
+   }
+
+   .profit, tr{
+     background-color: #D0D9E9
+   }
+   
+   .cost{
+     background-color: #FEF2CB !important;
+   }
+   
+   table{
+     overflow-x:auto;
+     border-collapse: collapse;
+     border: 1px solid black;
+   }
+
+   .mainPanel{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+   }
+
+   @media only screen and (max-width: 750px) {
+    .mainPanel {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }*/
